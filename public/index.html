@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href = "./style.css" rel = "stylesheet">
+</head>
+<body class = "font-rubik">
+    <!--header section start -->
+    <section>
+        <div class = "px-12 py-8 flex justify-between"> 
+            <!-- logo -->
+            <img src = "./images/logo-bookmark.svg">
+            <!-- navigation bar-->
+            <div class = "text-grayish-blue text-xs font-rubik uppercase sm:flex hidden flex-row items-center space-x-16">
+                <a class = "hover:text-dark-red" href = "#">Features</a>
+                <a class = "hover:text-dark-red" href = "#">Pricing</a>
+                <a class = "hover:text-dark-red" href = "#">Contact</a>
+                <a class = "hover:text-dark-red  hover:bg-white text-white border border-dark-red bg-dark-red rounded-md px-6 py-2" href = "#">Login</a>
+            </div>
+            <button id = "hamburger-button" class = "sm:hidden block"><img src = "./images/icon-hamburger.svg"></button>
+        </div>
+        <!-- mobile nav -->
+        <div class = "sm:hidden hidden mobile-nav absolute top-0 w-full h-full bg-very-dark-blue opacity-95">
+            <div class = "flex flex-col justify-center space-y-8 px-10 py-6">
+                <div class = "flex justify-between items-center">
+                    <!-- logo -->
+                    <div class = "flex items-center space-x-2">
+                        <div class = "relative w-10 h-10 bg-white rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-6 w-6 text-very-dark-blue" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
+                            </svg>
+                        </div>
+                        <h1 class = "font-medium text-2xl text-white uppercase">Bookmark</h1>
+                    </div>
+                    <div>
+                        <button id="close-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10  w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class = "flex flex-col justify-center">
+                    <a class = "border-b border-t  border-grayish-blue py-4 uppercase text-2xl text-medium text-white text-center" href = "#">Features</a>
+                    <a class = "border-b border-grayish-blue py-4 uppercase text-2xl text-medium text-white text-center" href = "#">Planning</a>
+                    <a class = "border-b border-grayish-blue py-4 uppercase text-2xl text-medium text-white text-center" href = "#">Planning</a>
+                </div>
+                <button class = "border-2 py-2 rounded-md text-2xl font-fold text-white uppercase text-center">Login</button>
+            </div>
+        </div>
+        <div>
+        </div>
+    </section>
+    <!--header section end -->
+
+    <!--front section start-->
+    <section>
+        <div class = " font-rubik  px-12 grid sm:grid-cols-2 sm:grid-rows-none  grid-rows-2 mt-20">
+            <div class = "space-y-8 sm:pr-20 pr-0 sm:order-1 order-2">
+                <h1 class = "font-bold text-3xl sm:text-left text-center text-very-dark-blue capitalize">
+                    A simple Bookmark Manager
+                </h1>
+                <p class = "text-grayish-blue sm:text-left text-center">
+                    A clean and simple interface to organize your favourite websites. Open a new 
+                    browser tab and see your sites load instantly. Try it for free.
+                </p>
+                <div class = "flex flex-row space-x-4 sm:justify-start justify-center">
+                    <button class = "bg-dark-blue rounded-md w-40 py-3 text-white border border-dark-blue hover:bg-white hover:text-dark-blue text-sm">Get It on Chrome</button>
+                    <button class = "hover:bg-white hover:text-black w-40 text-sm border border-very-dark-blue rounded-md px-4 py-3">Get on Firefox</button>
+                </div>
+            </div>
+            <div class = "order-1 sm:order-2">
+                <img src = "./images/illustration-hero.svg">
+            </div>
+        </div>
+    </section>
+    <!--front section end -->
+
+    <!--features section start -->
+    <section>
+        <div class = "flex flex-col items-center font-rubik sm:mt-32 mt-20 space-y-8">
+            <div class = "flex flex-col items-center space-y-8">
+                <h1 class = "text-2xl font-bold capitalize text-very-dark-blue">Features</h1>
+                <p class = "sm:w-2/4 w-4/5 text-md text-grayish-blue text-center">
+                    Our aim is to make it quick and easy for you to access your favourite websites. 
+                    Your bookmarks sync between your devices so you can access them on the go.
+                </p>
+            </div>
+            <div class = "sm:grid sm:grid-cols-3 sm:grid-rows-none px-12 grid-rows-3 gap-x-12 nav-button sm:h-16 sm:border-b-2 text-grayish-blue">
+                <button id = "button-1" class="text-center font-medium w-full sm:h-full h-12">
+                    Simple Bookmarking
+                </button>
+                <button id = "button-2" class= "text-center font-medium w-full sm:h-full h-12">
+                    Speed Searching
+                </button>
+                <button id = "button-3" class = "text-center font-medium w-full sm:h-full h-12">
+                    Easy Sharing
+                </button>
+            </div>
+            <div class = "grid sm:grid-cols-2 sm:grid-rows-none grid-rows-2  px-12 gap-12">
+                <div>
+                    <img id = "illustrator-image" src = "./images/illustration-features-tab-1.svg">
+                </div>
+                <div class = "flex flex-col space-y-8 sm:mt-10">
+                    <h1 id = "illustrator-heading" class = "sm:text-left text-center text-very-dark-blue text-xl font-bold">
+                        Bookmark in one click
+                    </h1>
+                    <p id = "illustrator-text" class = "sm:text-left text-center text-md text-grayish-blue text-left">
+                        Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                        gives you complete control over how you manage your favourite sites.
+                    </p>
+                    <div class = "flex justify-center items-center">
+                        <button class = "rounded-md w-40 bg-dark-blue hover:bg-white hover:text-very-dark-blue border border-dark-blue py-2 text-white text-sm">More Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- features section end -->
+
+    <!-- extension section start -->
+    <section>
+        <div class = "font-rubik">
+            <div class = "flex flex-col items-center font-rubik mt-28 space-y-6">
+                <h1 class = "text-very-dark-blue font-bold text-xl">
+                    Download the extention
+                </h1>
+                <p class = "text-grayish-blue text-md sm:w-3/5 w-4/5 text-center">
+                    We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+                    got a favourite you’d like us to prioritize.
+                </p>
+            </div>
+            <div class = "px-12 mt-16 grid sm:grid-cols-3 sm:grid-rows-none grid-rows-3 gap-20">
+                <div class = "py-8 shadow-2xl rounded-md flex flex-col space-y-4 items-center">
+                    <img src = "./images/logo-chrome.svg">
+                    <h1 class = "text-md font-bold text-very-dark-blue">Add to Chrome</h1>
+                    <span class = "text-sm text-grayish-blue">Minimum version 62</span>
+                    <button class = "text-sm bg-dark-blue hover:bg-white border border-dark-blue hover:text-dark-blue rounded-md py-2 px-4 text-white font-medium">Add & Install Extension</button>
+                </div>
+                <div class = "py-8 shadow-2xl rounded-md flex flex-col space-y-4 items-center">
+                    <img src = "./images/logo-firefox.svg">
+                    <h1 class = "text-md font-bold text-very-dark-blue">Add to Firefox</h1>
+                    <span class = "text-sm text-grayish-blue">Minimum version 55</span>
+                    <button class = "text-sm hover:bg-white border border-dark-blue hover:text-dark-blue bg-dark-blue rounded-md py-2 px-4 text-white font-medium">Add & Install Extension</button>
+                </div>
+                <div class = "py-8 shadow-2xl rounded-md flex flex-col space-y-4 items-center">
+                    <img src = "./images/logo-opera.svg">
+                    <h1 class = "text-md font-bold text-very-dark-blue">Add to Opera</h1>
+                    <span class = "text-sm text-grayish-blue">Minimum version 58</span>
+                    <button class = "text-sm hover:bg-white border border-dark-blue hover:text-dark-blue bg-dark-blue rounded-md py-2 px-4 text-white font-medium">Add & Install Extension</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- extenstion section end -->
+
+    <!-- FAQ section start -->
+    <section>
+        <div class = "flex flex-col space-y-8 items-center mt-20">
+            <div class = "flex flex-col space-y-4 items-center">
+                <h1 class = "text-2xl text-very-dark-blue font-bold capitalize text-center">
+                    Frequently Asked Questions
+                </h1>
+                <p class = "text-grayish-blue text-center w-3/5">
+                    Here are some of our FAQs. If you have any other questions you’d like 
+                    answered please feel free to email us.
+                </p>
+            </div>
+            <div class = "flex flex-col items-center w-3/5">
+                <div class = "faq w-full border-t border-b flex flex-col items-center space-y-8 py-4">
+                    <div class = "flex justify-between items-center w-full">
+                        <h1 class = "text-left text-xl text-very-dark-blue font-medium">
+                            What is Bookmark?
+                        </h1>
+                        <button class  = "arrow-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-dark-blue h-6 w-6 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class = "answer hidden">
+                        <p class = "text-md text-grayish-blue">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+                            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+                        </p>
+                    </div>
+                </div>
+                <div class = "faq w-full border-t border-b flex flex-col items-center space-y-8 py-4">
+                    <div class = "flex justify-between items-center w-full">
+                        <h1 class = "text-left text-xl text-very-dark-blue font-medium">
+                            How can I request a new browser?
+                        </h1>
+                        <button class  = "arrow-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-dark-blue h-6 w-6 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class = "answer hidden">
+                        <p class = "text-md text-grayish-blue">
+                            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+                            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+                            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+                            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                        </p>
+                    </div>
+                </div>
+                <div class = "faq w-full border-t border-b flex flex-col items-center space-y-8 py-4">
+                    <div class = "flex justify-between items-center w-full">
+                        <h1 class = "text-left text-xl text-very-dark-blue font-medium">
+                            Is there a mobile app?
+                        </h1>
+                        <button class  = "arrow-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-dark-blue h-6 w-6 transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class = "answer hidden">
+                        <p class = "text-md text-grayish-blue">
+                            Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+                            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+                            sollicitudin ex et ultricies bibendum.
+                        </p>
+                    </div>
+                </div>
+                <div class = "faq w-full border-t border-b flex flex-col items-center space-y-8 py-4">
+                    <div class = "flex justify-between items-center w-full">
+                        <h1 class = "text-left text-xl text-very-dark-blue font-medium">
+                            What about other Chromium browsers?
+                        </h1>
+                        <button class  = "arrow-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-dark-blue transform h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class = "answer hidden">
+                        <p class = "text-md text-grayish-blue">
+                            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+                            vitae neque eget nisl gravida pellentesque non ut velit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class = "hover:bg-white hover:text-dark-blue border border-dark-blue bg-dark-blue px-6 py-2 rounded-md text-white">More Info</button>
+        </div>
+    </section>
+    <!-- FAQ section end -->
+
+    <!-- contact section start -->
+    <section>
+        <div class = "bg-dark-blue py-8 mt-28">
+            <div class = "flex flex-col items-center space-y-4">
+                <h1 class = "text-white text-md uppercase font-medium text-center">
+                    35,000+ Already Joined
+                </h1>
+                <h1 class = "text-xl font-bold text-white text-center">
+                    Stay up-to-date with what<br> we're doing
+                </h1>
+                <div class = "flex sm:flex-row flex-col space-y-4 sm:space-y-0 sm:space-x-2">
+                    <input class = "rounded-md py-2 px-6 bg-white text-gray-500" type = "email" placeholder = "email">
+                    <button class = "hover:bg-white border border-dark-red hover:text-dark-red bg-dark-red rounded-md py-2 px-4 text-white">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- footer section start -->
+    <section>
+        <footer class = "min-w-full bg-very-dark-blue flex sm:flex-row flex-col sm:space-y-0 space-y-8 items-center justify-between px-28 py-6">
+            <div class = "flex sm:flex-row flex-col items-center sm:space-y-0 sm:space-x-8 space-y-8">
+                <div class = "flex items-center space-x-2">
+                    <div class = "relative w-8 h-8 bg-white rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-4 w-4 text-very-dark-blue" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M5 4a2 2 0 012-2h6a2 2 0 012 2v14l-5-2.5L5 18V4z" />
+                        </svg>
+                    </div>
+                    <h1 class = "font-medium text-xl text-white uppercase">Bookmark</h1>
+                </div>
+                <div class = "text-white text-xs font-rubik uppercase flex sm:flex-row flex-col items-center sm:space-x-16 sm:space-y-0 space-y-4 font-medium">
+                    <a class = "hover:text-dark-red" href = "#">Features</a>
+                    <a class = "hover:text-dark-red" href = "#">Pricing</a>
+                    <a class = "hover:text-dark-red" href = "#">Contact</a>
+                </div>
+            </div>
+            <div class = "flex space-x-8">
+                <img src = "./images/icon-facebook.svg">
+                <img src = "./images/icon-twitter.svg">
+            </div>
+        </footer>
+    </section>
+
+
+    <script src = "./script.js">
+    </script>
+</body>
+</html>
